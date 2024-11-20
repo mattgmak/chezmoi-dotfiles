@@ -179,9 +179,9 @@ keybindings:
   - commands: ['resize --width +2%']
     bindings: ['alt+p', 'alt+end']
   - commands: ['resize --height +2%']
-    bindings: ['alt+u', 'alt+shift+hom♣']
+    bindings: ['alt+u', 'alt+page_up']
   - commands: ['resize --height -2%']
-    bindings: ['alt+i', 'alt+shift+end']
+    bindings: ['alt+i', 'alt+page_down']
 
   # As an alternative to the resize keybindings above, resize mode enables
   # resizing via arrow keys or HJKL. The binding mode is defined above with
