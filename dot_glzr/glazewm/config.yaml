@@ -120,6 +120,7 @@ window_rules:
 
       - window_process: { equals: 'Flow.Launcher' }
       - window_process: { equals: 'cs2' }
+      - window_process: { equals: 'League of Legends' }
 
       # Ignore rules for various 3rd-party apps.
       - window_process: { equals: 'PowerToys' }

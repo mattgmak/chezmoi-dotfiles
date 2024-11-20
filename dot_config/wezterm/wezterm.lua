@@ -166,10 +166,10 @@ config.window_decorations = "RESIZE"
 config.font_size = 14.0
 
 config.window_padding = {
-    left = 0,
-    right = 0,
-    top = 0,
-    bottom = 0
+    left = 4,
+    right = 4,
+    top = 4,
+    bottom = 4
 }
 
 config.window_frame = {
