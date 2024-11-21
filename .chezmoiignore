@@ -1,5 +1,6 @@
 {{ if ne .chezmoi.os "windows" }}
 AppData
+.glzr
 {{ end }}
 {{ if ne .chezmoi.os "linux" }}
 .config/nvim
