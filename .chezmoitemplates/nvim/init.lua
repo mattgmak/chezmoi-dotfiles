@@ -1,3 +1,4 @@
+-- chezmoi:template:left-delimiter="# [[" right-delimiter=]]
 local is_vscode = vim.g.vscode ~= nil
 -- test
 

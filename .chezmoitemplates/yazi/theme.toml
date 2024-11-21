@@ -4,14 +4,10 @@
 
 # vim:fileencoding=utf-8:foldmethod=marker
 
-# : Flavor {{{
 
 [flavor]
 # use = "dracula"
 
-# : }}}
-
-# : Manager {{{
 
 [manager]
 cwd = { fg = "lightmagenta" }
@@ -47,10 +43,6 @@ border_style = { fg = "gray" }
 # Highlighting
 syntect_theme = ""
 
-# : }}}
-
-
-# : Status {{{
 
 [status]
 separator_open = ""
@@ -74,20 +66,12 @@ permissions_w = { fg = "red" }
 permissions_x = { fg = "cyan" }
 permissions_s = { fg = "darkgray" }
 
-# : }}}
-
-
-# : Select {{{
 
 [select]
 border = { fg = "blue" }
 active = { fg = "magenta", bold = true }
 inactive = {}
 
-# : }}}
-
-
-# : Input {{{
 
 [input]
 border = { fg = "blue" }
@@ -95,10 +79,6 @@ title = {}
 value = {}
 selected = { reversed = true }
 
-# : }}}
-
-
-# : Completion {{{
 
 [completion]
 border = { fg = "blue" }
@@ -110,20 +90,12 @@ icon_file = ""
 icon_folder = ""
 icon_command = ""
 
-# : }}}
-
-
-# : Tasks {{{
 
 [tasks]
 border = { fg = "blue" }
 title = {}
 hovered = { fg = "magenta", underline = true }
 
-# : }}}
-
-
-# : Which {{{
 
 [which]
 cols = 3
@@ -134,10 +106,6 @@ desc = { fg = "lightmagenta" }
 separator = "  "
 separator_style = { fg = "darkgray" }
 
-# : }}}
-
-
-# : Help {{{
 
 [help]
 on = { fg = "cyan" }
@@ -146,10 +114,6 @@ desc = {}
 hovered = { reversed = true, bold = true }
 footer = { fg = "black", bg = "white" }
 
-# : }}}
-
-
-# : Notify {{{
 
 [notify]
 title_info = { fg = "green" }
@@ -160,11 +124,6 @@ title_error = { fg = "red" }
 icon_info = ""
 icon_warn = ""
 icon_error = ""
-
-# : }}}
-
-
-# : File-specific styles {{{
 
 [filetype]
 
@@ -782,5 +741,3 @@ conds = [
   { if = "exec", text = "" },
   { if = "!dir", text = "󰈔" },
 ]
-
-# : }}}
