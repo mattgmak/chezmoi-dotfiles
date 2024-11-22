@@ -38,14 +38,14 @@ vim.opt.ignorecase = true
 vim.opt.smartcase = true
 
 -- append inside
-vim.keymap.set('n', '<leader>ci"', 'ci"<C-r>"')
-vim.keymap.set('n', '<leader>ci`', 'ci`<C-r>"')
-vim.keymap.set('n', '<leader>ci(', 'ci(<C-r>"')
-vim.keymap.set('n', '<leader>ci[', 'ci[<C-r>"')
-vim.keymap.set('n', '<leader>ci{', 'ci{<C-r>"')
-vim.keymap.set('n', '<leader>ci<', 'ci<<C-r>"')
-vim.keymap.set('n', '<leader>cib', 'cib<C-r>"')
-vim.keymap.set('n', '<leader>ciB', 'ciB<C-r>"')
+-- vim.keymap.set('n', '<leader>ci"', 'ci"<C-r>"')
+-- vim.keymap.set('n', '<leader>ci`', 'ci`<C-r>"')
+-- vim.keymap.set('n', '<leader>ci(', 'ci(<C-r>"')
+-- vim.keymap.set('n', '<leader>ci[', 'ci[<C-r>"')
+-- vim.keymap.set('n', '<leader>ci{', 'ci{<C-r>"')
+-- vim.keymap.set('n', '<leader>ci<', 'ci<<C-r>"')
+-- vim.keymap.set('n', '<leader>cib', 'cib<C-r>"')
+-- vim.keymap.set('n', '<leader>ciB', 'ciB<C-r>"')
 
 -- toggle relative line numbering
 vim.keymap.set('n', '<leader>ln', ':set relativenumber!<cr>')
@@ -192,7 +192,7 @@ if is_vscode then
         vscode.call("workbench.action.findInFiles")
     end)
     vim.keymap.set('n', '<leader>fe', function()
-        vscode.call("workbench.action.focusFirstEditorGroup")
+        vscode.call("workbench.action.focusActiveEditorGroup")
     end)
     vim.keymap.set('n', '<leader>ff', function()
         vscode.call("workbench.files.action.focusFilesExplorer")
@@ -220,6 +220,12 @@ if is_vscode then
     end)
     vim.keymap.set('n', '<leader>gl', function()
         vscode.call("gitlens.views.scm.grouped.focus")
+    end)
+    vim.keymap.set('n', '<leader>wc', function()
+        vscode.call("editor.action.dirtydiff.next")
+    end)
+    vim.keymap.set('n', '<leader>fo', function()
+        vscode.call("diffEditor.switchSide")
     end)
 end
 

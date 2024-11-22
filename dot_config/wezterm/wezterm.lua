@@ -167,7 +167,6 @@ config.font = wezterm.font 'IosevkaTerm Nerd Font'
 config.default_cursor_style = "SteadyBlock"
 config.window_decorations = "RESIZE"
 config.font_size = 14.0
-
 config.window_padding = {
     left = 4,
     right = 4,
