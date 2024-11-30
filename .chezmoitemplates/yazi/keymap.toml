@@ -5,6 +5,13 @@ on = ["c", "a"]
 run = "plugin compress"
 desc = "Archive selected files"
 
+[[manager.prepend_keymap]]
+on = "T"
+run = "plugin --sync max-preview"
+# For upcoming Yazi 0.4 (nightly version):
+# run  = "plugin max-preview"
+desc = "Maximize or restore preview"
+
 [manager]
 
 keymap = [
@@ -327,8 +334,8 @@ keymap = [
   ], desc = "Enter visual mode and select all" },
 
   # Character-wise movement
-  { on = "h", run = "move -1", desc = "Move back a character" },
-  { on = "l", run = "move 1", desc = "Move forward a character" },
+  { on = "l", run = "move -1", desc = "Move back a character" },
+  { on = ";", run = "move 1", desc = "Move forward a character" },
   { on = "<Left>", run = "move -1", desc = "Move back a character" },
   { on = "<Right>", run = "move 1", desc = "Move forward a character" },
   { on = "<C-b>", run = "move -1", desc = "Move back a character" },
