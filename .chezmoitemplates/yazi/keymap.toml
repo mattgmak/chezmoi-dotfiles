@@ -274,8 +274,8 @@ keymap = [
   { on = "<C-c>", run = "close", desc = "Close task manager" },
   { on = "w", run = "close", desc = "Close task manager" },
 
-  { on = "k", run = "arrow -1", desc = "Move cursor up" },
-  { on = "j", run = "arrow 1", desc = "Move cursor down" },
+  { on = "j", run = "arrow -1", desc = "Move cursor up" },
+  { on = "k", run = "arrow 1", desc = "Move cursor down" },
 
   { on = "<Up>", run = "arrow -1", desc = "Move cursor up" },
   { on = "<Down>", run = "arrow 1", desc = "Move cursor down" },
@@ -296,8 +296,8 @@ keymap = [
   { on = "<C-c>", run = "close", desc = "Cancel selection" },
   { on = "<Enter>", run = "close --submit", desc = "Submit the selection" },
 
-  { on = "k", run = "arrow -1", desc = "Move cursor up" },
-  { on = "j", run = "arrow 1", desc = "Move cursor down" },
+  { on = "j", run = "arrow -1", desc = "Move cursor up" },
+  { on = "k", run = "arrow 1", desc = "Move cursor down" },
 
   { on = "<Up>", run = "arrow -1", desc = "Move cursor up" },
   { on = "<Down>", run = "arrow 1", desc = "Move cursor down" },
@@ -406,8 +406,8 @@ keymap = [
   { on = "n", run = "close", desc = "Cancel the confirm" },
   { on = "y", run = "close --submit", desc = "Submit the confirm" },
 
-  { on = "k", run = "arrow -1", desc = "Move cursor up" },
-  { on = "j", run = "arrow 1", desc = "Move cursor down" },
+  { on = "j", run = "arrow -1", desc = "Move cursor up" },
+  { on = "k", run = "arrow 1", desc = "Move cursor down" },
 
   { on = "<Up>", run = "arrow -1", desc = "Move cursor up" },
   { on = "<Down>", run = "arrow 1", desc = "Move cursor down" },
@@ -450,8 +450,8 @@ keymap = [
   { on = "<C-c>", run = "close", desc = "Hide the help" },
 
   # Navigation
-  { on = "k", run = "arrow -1", desc = "Move cursor up" },
-  { on = "j", run = "arrow 1", desc = "Move cursor down" },
+  { on = "j", run = "arrow -1", desc = "Move cursor up" },
+  { on = "k", run = "arrow 1", desc = "Move cursor down" },
 
   { on = "<Up>", run = "arrow -1", desc = "Move cursor up" },
   { on = "<Down>", run = "arrow 1", desc = "Move cursor down" },
