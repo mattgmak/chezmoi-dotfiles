@@ -28,7 +28,9 @@ vim.keymap.set('v', 'p', 'P')
 vim.keymap.set('n', 'U', '<C-r>')
 
 -- clear search highlight
-vim.keymap.set('n', '<Esc>', ':nohlsearch<cr>')
+vim.keymap.set('n', '<Esc>', '<CMD>nohlsearch<cr>', {
+    silent = true
+})
 
 -- sync system clipboard
 vim.opt.clipboard = 'unnamedplus'
@@ -36,16 +38,6 @@ vim.opt.clipboard = 'unnamedplus'
 -- search ignore case
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
-
--- append inside
--- vim.keymap.set('n', '<leader>ci"', 'ci"<C-r>"')
--- vim.keymap.set('n', '<leader>ci`', 'ci`<C-r>"')
--- vim.keymap.set('n', '<leader>ci(', 'ci(<C-r>"')
--- vim.keymap.set('n', '<leader>ci[', 'ci[<C-r>"')
--- vim.keymap.set('n', '<leader>ci{', 'ci{<C-r>"')
--- vim.keymap.set('n', '<leader>ci<', 'ci<<C-r>"')
--- vim.keymap.set('n', '<leader>cib', 'cib<C-r>"')
--- vim.keymap.set('n', '<leader>ciB', 'ciB<C-r>"')
 
 -- toggle relative line numbering
 vim.keymap.set('n', '<leader>ln', ':set relativenumber!<cr>')
@@ -202,6 +194,9 @@ if is_vscode then
     end)
     vim.keymap.set('n', '<leader>fx', function()
         vscode.call("workbench.view.extensions")
+    end)
+    vim.keymap.set('n', '<leader>fb', function()
+        vscode.call("workbench.action.focusSideBar")
     end)
     vim.keymap.set('n', '<leader>ro', function()
         vscode.call("workbench.action.reopenClosedEditor")
