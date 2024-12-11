@@ -67,7 +67,7 @@ permissions_x = { fg = "cyan" }
 permissions_s = { fg = "darkgray" }
 
 
-[select]
+[pick]
 border = { fg = "blue" }
 active = { fg = "magenta", bold = true }
 inactive = {}
@@ -136,7 +136,7 @@ rules = [
 
   # Archives
   { mime = "application/{,g}zip", fg = "red" },
-  { mime = "application/x-{tar,bzip*,7z-compressed,xz,rar}", fg = "red" },
+  { mime = "application/{tar,bzip*,7z-compressed,xz,rar}", fg = "red" },
 
   # Documents
   { mime = "application/{pdf,doc,rtf,vnd.*}", fg = "cyan" },
