@@ -5,5 +5,4 @@ AppData
 {{ if ne .chezmoi.os "linux" }}
 .config/nvim
 .config/yazi
-.config/nushell
 {{ end }}

@@ -940,3 +940,7 @@ def --env y [...args] {
 }
 
 source ~/.local/share/atuin/init.nu
+
+use ~/.config/nushell/scripts/conda.nu
+
+$env.CONDA_NO_PROMPT = true
