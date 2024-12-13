@@ -50,6 +50,12 @@ vim.keymap.set('n', 'x', '"_x', {
     noremap = true
 })
 
+-- yank all
+vim.keymap.set('n', '<leader>ya', 'ggyG')
+
+-- visual all
+vim.keymap.set('n', '<leader>va', 'ggVG')
+
 -- Bootstrap lazy.nvim
 local lazypath = vim.fn.stdpath('data') .. '/lazy/lazy.nvim'
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
