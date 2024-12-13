@@ -100,6 +100,7 @@ $env.PATH = ($env.PATH | append "/snap/bin")
 $env.PATH = ($env.PATH | append "/home/goofy/.cargo/bin")
 $env.PATH = ($env.PATH | append "/usr/local/cuda/bin")
 $env.PATH = ($env.PATH | append "C:/Program Files/Git/bin")
+$env.PATH = ($env.PATH | append "/home/goofy/.atuin/bin")
 
 # To load from a custom file you can use:
 # source ($nu.default-config-dir | path join 'custom.nu')
