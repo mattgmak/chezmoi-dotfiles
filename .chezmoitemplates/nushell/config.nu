@@ -938,3 +938,5 @@ def --env y [...args] {
 	}
 	rm -fp $tmp
 }
+
+source ~/.local/share/atuin/init.nu
