@@ -125,6 +125,7 @@ window_rules:
       - window_process: { equals: 'RainbowSix' }
       - window_process: { equals: 'DyingLightGame' }
       - window_process: { equals: 'Beat Saber' }
+      - window_process: { equals: 'helldivers2' }
 
       # Ignore rules for various 3rd-party apps.
       - window_process: { equals: 'PowerToys' }
