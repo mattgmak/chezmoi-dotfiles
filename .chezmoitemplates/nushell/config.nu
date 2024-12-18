@@ -939,6 +939,14 @@ def --env y [...args] {
 	rm -fp $tmp
 }
 
+def --env c [...args] {
+    clear
+}
+
+def --env q [...args] {
+    exit
+}
+
 source ~/.local/share/atuin/init.nu
 
 use ~/.config/nushell/scripts/conda.nu
