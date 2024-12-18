@@ -9,7 +9,9 @@ vim.g.mapleader = ' '
 vim.cmd('nmap <leader>c :e ~/AppData/Local/nvim/init.lua<cr>')
 
 -- save
-vim.keymap.set('n', '<leader>s', ':w<cr>')
+vim.keymap.set('n', '<leader>s', '<cmd>w<cr>', {
+    silent = true
+})
 
 -- motion keys (helldivers mappings)
 
@@ -212,6 +214,10 @@ if is_vscode then
     end)
     vim.keymap.set('n', '<leader>rr', function()
         vscode.call("vscode-neovim.restart")
+    end)
+    vim.keymap.set('n', '<leader>sr', function()
+        vscode.call("extension.updateCustomCSS")
+        vscode.call("workbench.action.reloadWindow")
     end)
     vim.keymap.set('n', 'gr', function()
         vscode.call("editor.action.goToReferences")
