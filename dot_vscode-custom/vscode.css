@@ -135,7 +135,7 @@
 .monaco-list .monaco-list-row .monaco-icon-label .label-name {
   font-size: 14px !important;
   font-weight: 400 !important;
-  color: #FFF !important;
+  /* color: #FFF !important; */
 }
 
 /* File explorer action buttons */
@@ -162,15 +162,19 @@
 .monaco-hover {
   box-shadow: 0px 8px 32px rgba(0, 0, 0, .45) !important;
   padding: 10px !important;
-  background-color: #1A1829 !important;
+  background-color: #17032D !important;
   backdrop-filter: blur(3px) !important;
   border-radius: 6px !important;
   border: none !important;
 }
 
+.overflowingContentWidgets .monaco-sash {
+  background-color: transparent !important;
+}
+
 /* Suggestion box style */
 .suggest-widget {
-  background-color: #1A1829 !important;
+  background-color: #17032D !important;
   border-radius: 6px !important;
   border: none !important;
   padding: 2px !important;
