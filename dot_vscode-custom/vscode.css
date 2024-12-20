@@ -227,6 +227,7 @@
   padding: 10px 10px 20px 10px !important;
   backdrop-filter: blur(3px) !important;
   z-index: 100000 !important;
+  overflow: hidden !important;
 }
 
 .quick-input-titlebar {
