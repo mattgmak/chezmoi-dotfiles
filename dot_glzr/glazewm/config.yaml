@@ -122,6 +122,7 @@ window_rules:
       - window_process: { equals: 'cs2' }
       - window_process: { equals: 'League of Legends' }
       - window_process: { equals: 'NieRAutomata' }
+      - window_process: { equals: 'NieR Replicant ver.1.22474487139.exe' }
       - window_process: { equals: 'RainbowSix' }
       - window_process: { equals: 'DyingLightGame' }
       - window_process: { equals: 'Beat Saber' }
@@ -243,7 +244,7 @@ keybindings:
   # Launch CMD terminal. Alternatively, use `shell-exec wt` or
   # `shell-exec %ProgramFiles%/Git/git-bash.exe` to start Windows
   # Terminal and Git Bash respectively.
-  - commands: ['shell-exec cmd']
+  - commands: ['shell-exec wezterm-gui']
     bindings: ['alt+enter']
 
   # Focus the next/previous workspace defined in `workspaces` config.
