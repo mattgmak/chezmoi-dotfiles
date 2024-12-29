@@ -29,4 +29,8 @@ ya pack -a dedukun/relative-motions
 # searchjump.yazi
 git clone https://github.com/DreamMaoMao/searchjump.yazi.git $"($env.APPDATA)/yazi/config/plugins/searchjump.yazi"
 
+# system-clipboard.yazi
+ya pack -a orhnk/system-clipboard
+scoop install clipboard
+
 ```
