@@ -17,4 +17,8 @@ ya pack -a llanosrocas/yaziline
 # max-preview.yazi
 ya pack -a yazi-rs/plugins:max-preview
 
+# fg.yazi
+git clone https://gitee.com/DreamMaoMao/fg.yazi.git $"($env.APPDATA)/yazi/config/plugins/fg.yazi"
+# fzf ripgrep bat nullshell(windows)
+scoop install fzf ripgrep bat
 ```
