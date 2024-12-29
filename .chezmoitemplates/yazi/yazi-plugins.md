@@ -26,4 +26,7 @@ scoop install fzf ripgrep bat
 ya pack -a dedukun/relative-motions
 # need to manually update init.lua for plugin
 
+# searchjump.yazi
+git clone https://github.com/DreamMaoMao/searchjump.yazi.git $"($env.APPDATA)/yazi/config/plugins/searchjump.yazi"
+
 ```
