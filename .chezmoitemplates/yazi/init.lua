@@ -1,5 +1,10 @@
 require("starship"):setup()
 
+require("relative-motions"):setup({
+    show_numbers = "relative",
+    show_motion = true
+})
+
 -- require("yaziline"):setup({
 --     separator_style = "curvy", -- "angly" | "curvy" | "liney" | "empty"
 --     -- separator_open = "",

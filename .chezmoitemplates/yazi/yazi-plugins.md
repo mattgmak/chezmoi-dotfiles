@@ -21,4 +21,9 @@ ya pack -a yazi-rs/plugins:max-preview
 git clone https://gitee.com/DreamMaoMao/fg.yazi.git $"($env.APPDATA)/yazi/config/plugins/fg.yazi"
 # fzf ripgrep bat nullshell(windows)
 scoop install fzf ripgrep bat
+
+# relative-motions.yazi
+ya pack -a dedukun/relative-motions
+# need to manually update init.lua for plugin
+
 ```
