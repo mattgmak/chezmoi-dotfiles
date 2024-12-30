@@ -947,6 +947,10 @@ def --env q [...args] {
     exit
 }
 
+def --env gbash [...args] {
+    `c:/Program Files/Git/bin/bash.exe`
+}
+
 source ~/.local/share/atuin/init.nu
 
 use ~/.config/nushell/scripts/conda.nu
