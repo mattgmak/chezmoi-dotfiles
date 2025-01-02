@@ -6,7 +6,7 @@ local is_vscode = vim.g.vscode ~= nil
 vim.g.mapleader = ' '
 
 -- open config
-vim.cmd('nmap <leader>c :e ~/AppData/Local/nvim/init.lua<cr>')
+vim.cmd('nmap <leader>cc :e ~/AppData/Local/nvim/init.lua<cr>')
 
 -- save
 vim.keymap.set('n', '<leader>s', '<cmd>w<cr>', {
