@@ -240,6 +240,9 @@ if is_vscode then
     vim.keymap.set('n', '<leader>cn', function()
         vscode.call("notifications.clearAll")
     end)
+    vim.keymap.set('n', 'gt', function()
+        vscode.call("editor.action.goToTypeDefinition")
+    end)
 end
 
 -- flash
