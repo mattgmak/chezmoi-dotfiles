@@ -237,6 +237,9 @@ if is_vscode then
     vim.keymap.set('n', '<leader>ot', function()
         vscode.call("vscode-wezterm.openTerminal")
     end)
+    vim.keymap.set('n', '<leader>cn', function()
+        vscode.call("notifications.clearAll")
+    end)
 end
 
 -- flash
