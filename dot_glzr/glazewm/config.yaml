@@ -127,6 +127,7 @@ window_rules:
       - window_process: { equals: 'DyingLightGame' }
       - window_process: { equals: 'Beat Saber' }
       - window_process: { equals: 'helldivers2' }
+      - window_process: { equals: 'VALORANT-Win64-Shipping' }
 
       # Ignore rules for various 3rd-party apps.
       - window_process: { equals: 'PowerToys' }
