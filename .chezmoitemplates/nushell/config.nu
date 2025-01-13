@@ -948,7 +948,7 @@ def --env q [...args] {
 }
 
 def --env gbash [...args] {
-    `c:/Program Files/Git/bin/bash.exe`
+    `c:/Program Files/Git/bin/bash.exe` ...$args
 }
 
 source ~/.local/share/atuin/init.nu
