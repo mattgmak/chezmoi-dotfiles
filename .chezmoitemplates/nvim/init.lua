@@ -132,6 +132,7 @@ require('lazy').setup({{
 }})
 
 if is_vscode then
+    -- vim.notify = vscode.notify
     -- vscode-multi-cursor
     vim.api.nvim_set_hl(0, 'VSCodeCursor', {
         bg = '#542fa4',
@@ -237,11 +238,62 @@ if is_vscode then
     vim.keymap.set('n', '<leader>ot', function()
         vscode.call("vscode-wezterm.openTerminal")
     end)
-    vim.keymap.set('n', '<leader>cn', function()
+    vim.keymap.set('n', '<leader>n', function()
         vscode.call("notifications.clearAll")
     end)
     vim.keymap.set('n', 'gt', function()
         vscode.call("editor.action.goToTypeDefinition")
+    end)
+    vim.keymap.set('n', '<leader>gsy', function()
+        vscode.action("git.sync", {
+            callback = function(error)
+                if error then
+                    vscode.notify("Sync failed: " .. error)
+                else
+                    vscode.notify("Sync complete")
+                end
+            end
+        })
+    end)
+    vim.keymap.set('n', '<leader>gst', function()
+        vscode.action("git.stageAll", {
+            callback = function(error)
+                if error then
+                    vscode.notify("Stage failed: " .. error)
+                else
+                    vscode.notify("Staged all changes")
+                end
+            end
+        })
+    end)
+    vim.keymap.set('n', '<leader>gb', function()
+        vscode.action("git.branchFrom")
+    end)
+    vim.keymap.set('n', '<leader>gc', function()
+        vscode.action("git.commit")
+    end)
+    vim.keymap.set('n', '<leader>gf', function()
+        vscode.action("git.fetchPrune", {
+            callback = function(error)
+                if error then
+                    vscode.notify("Fetch failed: " .. error)
+                else
+                    vscode.notify("Fetch complete")
+                end
+            end
+        })
+    end)
+    vim.keymap.set('n', '<leader>gg', function()
+        vscode.action("git.checkout")
+    end)
+    vim.keymap.set('n', '<leader>gm', function()
+        vscode.action("git.merge")
+    end)
+    vim.keymap.set('n', '<leader>gd', function()
+        vscode.action("gitlens.gitCommands.branch.delete")
+    end)
+    vim.keymap.set('n', '<leader>pr', function()
+        vscode.action("gitlens.createPullRequestOnRemote")
     end)
 end
 
