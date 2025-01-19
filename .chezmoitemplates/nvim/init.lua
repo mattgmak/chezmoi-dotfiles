@@ -247,7 +247,7 @@ if is_vscode then
             end
         })
     end)
-    vim.keymap.set('n', '<leader>gst', function()
+    vim.keymap.set('n', '<leader>gsa', function()
         vscode.action("git.stageAll", {
             callback = function(error)
                 if error then
@@ -286,6 +286,9 @@ if is_vscode then
     end)
     vim.keymap.set('n', '<leader>pr', function()
         vscode.action("gitlens.createPullRequestOnRemote")
+    end)
+    vim.keymap.set('n', '<leader>gst', function()
+        vscode.action("gitlens.gitCommands.status")
     end)
 end
 
