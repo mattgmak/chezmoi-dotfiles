@@ -85,7 +85,7 @@ require('lazy').setup({{
     opts = {},
     -- stylua: ignore
     keys = {{
-        "s",
+        "<BS>",
         mode = {"n", "x", "o"},
         function()
             require("flash").jump()
@@ -112,22 +112,14 @@ require('lazy').setup({{
             require("flash").treesitter_search()
         end,
         desc = "Treesitter Search"
-    }, {
-        "<c-s>",
-        mode = {"c"},
-        function()
-            require("flash").toggle()
-        end,
-        desc = "Toggle Flash Search"
     }}
 }, {
-    "kylechui/nvim-surround",
-    version = "*", -- Use for stability; omit to use `main` branch for the latest features
-    event = "VeryLazy",
+    'echasnovski/mini.nvim',
+    version = '*',
     config = function()
-        require("nvim-surround").setup({
-            -- Configuration here, or leave empty to use defaults
-        })
+        require('mini.ai').setup()
+        require('mini.surround').setup()
+        require('mini.files').setup()
     end
 }})
 
