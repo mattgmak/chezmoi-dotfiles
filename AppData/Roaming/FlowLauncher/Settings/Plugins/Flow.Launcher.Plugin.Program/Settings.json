@@ -1,0 +1,51 @@
+{
+  "LastIndexTime": "2025-01-26T08:14:54.9036682+08:00",
+  "ProgramSources": [],
+  "DisabledProgramSources": [
+    {
+      "Location": "C:\\Users\\Matthew Mak\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Chrome Apps",
+      "Name": "Zoom",
+      "Enabled": false,
+      "UniqueIdentifier": "c:\\users\\matthew mak\\appdata\\roaming\\microsoft\\windows\\start menu\\programs\\chrome apps\\zoom.lnk"
+    },
+    {
+      "Location": "C:\\Program Files\\WindowsApps\\TheBrowserCompany.Arc_1.18.0.48077_x64__ttt1ap7aakyb4",
+      "Name": "Arc",
+      "Enabled": false,
+      "UniqueIdentifier": "c:\\program files\\windowsapps\\thebrowsercompany.arc_1.18.0.48077_x64__ttt1ap7aakyb4\\arc.exe"
+    },
+    {
+      "Location": "C:\\Program Files\\WindowsApps\\TheBrowserCompany.Arc_1.26.3.62015_x64__ttt1ap7aakyb4",
+      "Name": "Arc",
+      "Enabled": false,
+      "UniqueIdentifier": "c:\\program files\\windowsapps\\thebrowsercompany.arc_1.26.3.62015_x64__ttt1ap7aakyb4\\arc.exe"
+    },
+    {
+      "Location": "C:\\Program Files\\WindowsApps\\TheBrowserCompany.Arc_1.28.0.62218_x64__ttt1ap7aakyb4",
+      "Name": "Arc",
+      "Enabled": false,
+      "UniqueIdentifier": "c:\\program files\\windowsapps\\thebrowsercompany.arc_1.28.0.62218_x64__ttt1ap7aakyb4\\arc.exe"
+    }
+  ],
+  "CustomSuffixes": [],
+  "CustomProtocols": [],
+  "BuiltinSuffixesStatus": {
+    "exe": true,
+    "appref-ms": true,
+    "lnk": true
+  },
+  "BuiltinProtocolsStatus": {
+    "steam": true,
+    "epic": true,
+    "http": false
+  },
+  "UseCustomSuffixes": false,
+  "UseCustomProtocols": false,
+  "EnableStartMenuSource": true,
+  "EnableDescription": false,
+  "HideAppsPath": true,
+  "HideUninstallers": false,
+  "EnableRegistrySource": true,
+  "EnablePathSource": false,
+  "EnableUWP": true
+}
