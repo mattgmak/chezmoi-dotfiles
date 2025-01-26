@@ -320,6 +320,9 @@ if is_vscode then
     vim.keymap.set('n', '<leader>jc', function()
         vscode.call("breadcrumbs.focusAndSelect")
     end)
+    vim.keymap.set('n', '<leader>k', function()
+        vscode.call("snipe-vscode.switchTab")
+    end)
 end
 
 -- flash
