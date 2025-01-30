@@ -152,7 +152,7 @@ config.key_tables = {
 }
 
 config.front_end = "OpenGL"
-config.default_prog = {'C:\\Users\\Matthew Mak\\AppData\\Local\\Programs\\nu\\bin\\nu.exe'}
+config.default_prog = {'nu'}
 config.max_fps = 240
 config.animation_fps = 1
 config.term = "xterm-256color" -- Set the terminal type

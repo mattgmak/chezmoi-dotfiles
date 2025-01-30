@@ -951,6 +951,10 @@ def --env gbash [...args] {
     `c:/Program Files/Git/bin/bash.exe` ...$args
 }
 
+def --env nixrb [...args] {
+    sudo nixos-rebuild switch --flake $'($env.HOME)/NixConfig#default' -I nixos-config=($env.HOME)/NixConfig/configuration.nix
+}
+
 source ~/.local/share/atuin/init.nu
 
 use ~/.config/nushell/scripts/conda.nu
