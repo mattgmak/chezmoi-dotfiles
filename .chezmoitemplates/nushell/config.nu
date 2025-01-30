@@ -955,6 +955,10 @@ def --env nixrb [...args] {
     sudo nixos-rebuild switch --flake $'($env.HOME)/NixConfig#default' -I nixos-config=($env.HOME)/NixConfig/configuration.nix
 }
 
+def --env cu [...args] {
+    appimage-run ~/CursorAppImage/* ...$args
+}
+
 source ~/.local/share/atuin/init.nu
 
 use ~/.config/nushell/scripts/conda.nu
