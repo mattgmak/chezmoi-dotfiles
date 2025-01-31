@@ -952,11 +952,15 @@ def --env gbash [...args] {
 }
 
 def --env nixrb [...args] {
-    sudo nixos-rebuild switch --flake $'($env.HOME)/NixConfig#default' -I nixos-config=($env.HOME)/NixConfig/configuration.nix
+    sudo nixos-rebuild switch --flake $'($env.HOME)/NixConfig#goofy' -I nixos-config=($env.HOME)/NixConfig/configuration.nix
 }
 
 def --env cu [...args] {
     appimage-run ~/CursorAppImage/* ...$args
+}
+
+def --env sucu [...args] {
+    sudo appimage-run $'($env.HOME)/CursorAppImage/*' --user-data-dir=$"($env.HOME)/.config/Cursor" --extensions=$"($env.HOME)/.cursor/extensions" --no-sandbox ...$args
 }
 
 source ~/.local/share/atuin/init.nu

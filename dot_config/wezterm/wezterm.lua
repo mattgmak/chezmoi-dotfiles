@@ -176,7 +176,7 @@ config.window_padding = {
 
 config.window_frame = {
     font = wezterm.font({
-        family = "GeistMono Nerd Font Mono",
+        family = "IosevkaTerm Nerd Font",
         weight = "Bold"
     }),
     -- font_size = 14.0
@@ -203,5 +203,7 @@ config.colors = {
 
 -- config.window_decorations = "INTEGRATED_BUTTONS | RESIZE"
 config.initial_cols = 80
+config.enable_wayland = false
+config.front_end = "WebGpu"
 
 return config
