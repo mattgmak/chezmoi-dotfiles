@@ -46,10 +46,10 @@
   "TimeFormat": "HH:mm",
   "DateFormat": "dd\u0027/\u0027MM",
   "FirstLaunch": false,
-  "SettingWindowWidth": 923,
+  "SettingWindowWidth": 2556,
   "SettingWindowHeight": 1436,
   "SettingWindowTop": 2,
-  "SettingWindowLeft": 927,
+  "SettingWindowLeft": 2,
   "SettingWindowState": 0,
   "CustomExplorerIndex": 4,
   "CustomExplorerList": [
@@ -145,13 +145,13 @@
   "AlwaysStartEn": false,
   "QuerySearchPrecision": "Regular",
   "AutoUpdates": true,
-  "WindowLeft": 1280,
+  "WindowLeft": 845,
   "WindowTop": 350,
   "CustomWindowLeft": 0,
   "CustomWindowTop": 0,
   "KeepMaxResults": false,
   "MaxResultsToShow": 6,
-  "ActivateTimes": 3127,
+  "ActivateTimes": 3539,
   "CustomPluginHotkeys": [
     {
       "Hotkey": "Alt \u002B S",
