@@ -46,7 +46,7 @@
   "TimeFormat": "HH:mm",
   "DateFormat": "dd\u0027/\u0027MM",
   "FirstLaunch": false,
-  "SettingWindowWidth": 1466,
+  "SettingWindowWidth": 1277,
   "SettingWindowHeight": 1436,
   "SettingWindowTop": 2,
   "SettingWindowLeft": 2,
@@ -145,16 +145,16 @@
   "AlwaysStartEn": false,
   "QuerySearchPrecision": "Regular",
   "AutoUpdates": true,
-  "WindowLeft": 1280,
+  "WindowLeft": 845,
   "WindowTop": 350,
   "CustomWindowLeft": 0,
   "CustomWindowTop": 0,
   "KeepMaxResults": false,
   "MaxResultsToShow": 6,
-  "ActivateTimes": 3515,
+  "ActivateTimes": 3576,
   "CustomPluginHotkeys": [
     {
-      "Hotkey": "Alt \u002B S",
+      "Hotkey": "Alt \u002B Back",
       "ActionKeyword": "w "
     }
   ],

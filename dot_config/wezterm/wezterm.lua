@@ -133,7 +133,7 @@ config.window_frame = {
 
 config.initial_cols = 80
 config.enable_wayland = false
-config.front_end = "WebGpu"
+-- config.front_end = "WebGpu"
 
 require("modules.tab_bar").setup(config)
 return config
