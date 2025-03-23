@@ -1,6 +1,9 @@
 {{ if ne .chezmoi.os "windows" }}
 AppData
 .glzr
+.config/whkdrc
+komorebi.bar.json
+komorebi.json
 {{ end }}
 {{ if ne .chezmoi.os "linux" }}
 .config/nvim
